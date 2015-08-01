@@ -1,0 +1,10 @@
+uwsgi:
+    build: .
+    ports:
+        - '8000:8000'
+
+nginx:
+    build: .
+    dockerfile: nginx.Dockerfile
+    ports:
+        - '5000:80'

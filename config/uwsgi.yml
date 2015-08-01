@@ -1,0 +1,9 @@
+uwsgi:
+    chdir: /app
+    http-socket: :8000
+    virtualenv: /venv
+    wsgi: wsgi
+    plugins-dir: /usr/lib/uwsgi
+    need-plugin: python
+    static-map: /uwsgi-static=/built/static
+    buffer-size: 65535
